@@ -1,0 +1,196 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1400px;
+}
+header{
+    width: 100%;
+    background: chocolate;
+    display: flex;
+    justify-content: space-between;
+    background: #e5e5e581;
+    padding: 18px;
+}
+header h2{
+    font-size: 30px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li{
+    list-style: none;
+    margin: 0 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.menu li:hover, .menu #active{
+    color: indianred;
+}
+.global-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.header-flex-basis{
+     width: 50%;
+     align-items: flex-start;
+}
+.header-flex-basis img{
+    width: 90%;
+}
+.flex-basis, .recipe-section, .statistics-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.statistics-flex{
+ flex-direction: row;
+}
+.flex-basis{
+    width: 50%;
+
+}
+.header{
+    padding: 0 20px;
+    height: 100vh;
+}
+.header p{
+    width: 50%;
+}
+.header h2, .about-section h2{
+    font-size: 60px;
+    margin-bottom: 0;
+    color: #575757;
+}
+.global-btn{
+    background: linear-gradient(to left , #FBA24F, #FF1E1E);
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    border: transparent;
+}
+p{
+    font-size: 20px;
+    color: #828282;
+}
+.header h2 span, header h2 span{
+    color: indianred;
+}
+.about-section{
+    height: 600px;
+    background-image: url(images/aboutBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-info{
+    width: 40%;
+}
+.about-img{
+    width: 45%;
+}
+.about-info p{
+    padding-right: 50px;
+    line-height: 1.5;
+}
+.recipe-section{
+    flex-direction: column;
+    align-items: center;
+    background: #e5e5e511;
+    
+}
+.recipe-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+.recipe-intro p{
+    width: 50%;
+    text-align: center;
+}
+.recipe-intro h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #676767;
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+
+.food-flex{
+    width: 100%; 
+    display: flex;   
+    justify-content: space-evenly;
+    padding: 100px 0;
+}
+.food-card{
+ width: 375px;
+padding: 20px;
+background: white;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.329);
+border-radius: 10px;
+}
+.food-card h2{
+    font-size: 28px;
+}
+.food-card p{
+    line-height: 1.5;
+}
+
+/* Stattistics part */
+.statistics{
+    width: 80%;
+    background: white;
+    margin-bottom: 100px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.329);
+    justify-content: space-evenly;
+}
+.statistics h2{
+    font-size: 48px;
+    margin: 0;
+}
+footer{
+    height: 260px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer h2{
+    color: #676767;
+    font-size: 30px;
+    margin: 0;
+}
+footer h2 span{
+    color: #FBA24F;
+}
+footer p{
+    font-weight: 200;
+}
+
+/* @media (max-width:640px) {
+        .global-flex{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        }
+} */
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    .global-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+ }

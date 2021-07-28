@@ -193,4 +193,8 @@ footer p{
         align-items: center;
        
     }
+    header{
+        justify-content: center;
+        flex-direction: column;
+    }
  }
